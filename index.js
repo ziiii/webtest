@@ -4,6 +4,11 @@ import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/controls/OrbitControls.js';
 
+const modelPosZ=600;
+let scanModel;
+let logoModel;
+let blenderModel;
+
 //load the video 
 // let video = document.getElementById('video');
 // let videoTexture = new THREE.VideoTexture(video);
@@ -32,6 +37,21 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 document.body.appendChild(renderer.domElement);
 
+//LOAD LOGO pink
+const loader2= new GLTFLoader();
+loader2.load('asset/logoModel-PINK/logo copy.gltf', function (gltf) {
+    logoModel=gltf.scene;
+     scene.add(gltf.scene);
+     gltf.scene.scale.set(600, 600, 600);
+     gltf.scene.position.set(logoStartX, logoStartY, logoStartZ);
+     console.log(gltf.scene);
+
+ }, function (xhr) {
+     console.log((xhr.loaded / xhr.total * 100) + "%");
+ }, function (error) {
+     console.error('An error occurred:', error);
+ 
+ });
 
 //load gallery
  const loader = new GLTFLoader();
