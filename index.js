@@ -12,8 +12,6 @@ import { RenderPass } from 'https://unpkg.com/three@0.130.0/examples/jsm/postpro
 import { UnrealBloomPass } from 'https://unpkg.com/three@0.130.0/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 
-#define PI 3.14159265358979
-#define MOD3 vec3(.1031,.11369,.13787)
 
 
 
