@@ -8,8 +8,8 @@ import { EffectComposer } from 'https://unpkg.com/three@0.130.0/examples/jsm/pos
 // import { ShaderPass } from 'https://unpkg.com/three@0.130.0/examples/jsm/postprocessing/ShaderPass.js';
 // import { FXAAShader } from 'https://unpkg.com/three@0.130.0/examples/jsm/shaders/FXAAShader.js';
 // import { SMAAPass } from 'https://unpkg.com/three@0.130.0/examples/jsm/postprocessing/SMAAPass.js';
-import { RenderPass } from 'https://unpkg.com/three@0.130.0/examples/jsm/postprocessing/RenderPass.js';
-import { UnrealBloomPass } from 'https://unpkg.com/three@0.130.0/examples/jsm/postprocessing/UnrealBloomPass.js';
+// import { RenderPass } from 'https://unpkg.com/three@0.130.0/examples/jsm/postprocessing/RenderPass.js';
+// import { UnrealBloomPass } from 'https://unpkg.com/three@0.130.0/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 
 
